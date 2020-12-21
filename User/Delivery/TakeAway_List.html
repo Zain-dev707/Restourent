@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PAYMENT MODE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <!-- navbar  -->
+    <link rel="stylesheet" href="dist/css/bootstrap-drawer.css">
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+</head>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate + now;
+
+        // Time calculations for days, hours, minutes and seconds
+        //   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (500 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = hours + ":"
+            + minutes + ":" + seconds + "pm";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+
+</script>
+
+
+<body class="has-drawer">
+    <div class="container-fluid top-bg ">
+        <div class="row">
+            <div class="col-md-12">
+
+                <b class="p-0 float-right text-white" id='demo'> </b>
+
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light second-top-bg ">
+
+        <div class="drawer-controls">
+            <a href="#drawerExample" data-toggle="drawer" aria-foldedopen="false" aria-controls="drawerExample"
+                onclick="openNav()" class="btn btn-default fa fa-bars text-white"></a>
+        </div>
+        <a class="navbar-brand text-white" href="#">Restourents</a>
+
+
+        <div class="collapse navbar-collapse pl-5 d-flex" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item   nav-w">
+                    <a class="nav-link  border-white border-right text-center text-white" href="#">DINNIND <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  nav-w">
+                    <a class="nav-link  border-white border-right text-center text-white" href="#">TAKEAWAY
+                        <span class="badge badge-info bg-white text-red p-1" id="labeled">2</span></a>
+                </li>
+                <li class="nav-item   nav-w">
+                    <a class="nav-link  border-white border-right text-center text-white" href="#">DELIVERY</a>
+
+                </li>
+                <li class="nav-item  nav-w">
+                    <a class="nav-link  border-white border-right text-center text-white " href="#">PICKUP</a>
+                </li>
+            </ul>
+            <div class=" pt-2 pb-0 my-2 my-lg-0 d-flex">
+                <div class="">
+                    <i class="fa fa-bell text-white pr-2 nav-icon"></i>
+                    <span class="badge badge-info bg-white text-red p-1" id="labeled2">2</span>
+                </div>
+                <div class=" ">
+                    <p class="pr-2 text-white">Monday,Nov 23
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <a href="#" class="text-white border-bottom">Restourents</a>
+        <a href="#" class="text-white">About</a>
+        <a href="#" class="text-white">Services</a>
+        <a href="#" class="text-white">Clients</a>
+        <a href="#" class="text-white">Contact</a>
+    </div>
+    <!-- Main Section  -->
+    <div class="container-fluid">
+        <div class="row mb-1">
+            <div class="col-md-12 pr-4 border-right">
+                <!-- first div  -->
+                <div class="row  p-5 mt-2 mb-5 bg-white rounded ">
+                    <div class="col-md-4 col-3">
+                        <button class="btn-red-outline pt-0 pb-0 d-flex ">
+                            <span class="p-increas">+</span>
+                            <span class="pt-3 font-booton-set"> ADD TAKE AWAY ORDER</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- first div close  -->
+                <!-- second div -->
+                <div class="row shadow p-3 mb-2 bg-light">
+                    <div class="col-md-12 pl-5 col-12">
+                        <b class="text-red font-size-head">TAKE AWAY PENDING (2)</b>
+                    </div>
+
+                </div>
+                <!-- second div close -->
+                <div class="row mb-1">
+                    <div class="col-md-12 pl-1 p-0 scroll-table-row">
+                        <table class="table table-striped table-bordered shadow  p-0 text-center">
+                            <thead class="border-bottom">
+                                <tr class="z-exp-color">
+                                    <th scope="col border-right">No</th>
+                                    <th class="text-center w-z-table" scope="col">Order Number</th>
+                                    <th class='text-center w-z-table'>Time Received</th>
+                                    <th scope="col" class="w-z-table">Name</th>
+                                    <th class='w-z-table' scope="col">PAGER NO.</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>#00000101</td>
+
+                                    <td class=" text-red">7:53pm</td>
+                                    <td>JIMMY</td>
+                                    <td class="text-red">01</td>
+                                    <td class="w-100 p-0 pl-5 pt-1 pb-1   text-left">
+
+                                        <button class="btn-red-outline ">
+                                            <span class="font-table-botton"> View more</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>#00000102</td>
+
+                                    <td class=" text-red">8:05pm</td>
+                                    <td>Kevin</td>
+                                    <td class="text-red">02</td>
+                                    <td class="w-100 p-0 pt-1 pl-5  pb-1 text-left">
+                                        <button class="btn-red-outline ">
+                                            <span class="font-table-botton"> View more</span>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row shadow p-5 bg-light rounded  fixed-bottom">
+                    <div class="col-md-12  col-12 ">
+                        <p class="last-font">TAKEAWAY HISTORY</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+
+
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

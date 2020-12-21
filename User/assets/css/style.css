@@ -1,0 +1,207 @@
+
+@font-face{
+    src: url("../font/seguisb.ttf");
+font-family: "Segoe-UI-semi-bold";
+}
+/* Page Name Give_Out  */
+body{
+    font-family: "Segoe-UI-semi-bold";
+}
+
+.btn-red-outline {
+    border: 1px solid #FC0300;
+    color: #FC0300;
+    font-size: 20px;
+    background: none;
+    border-radius: 3px;
+    padding: 10px 25px 10px 25px;
+    font-weight: bold;
+    transition: .2s all;
+}
+.btn-red-outline:hover{
+    background-color:  #FC0300;
+    color: white;
+    font-weight: bold;
+
+}
+.btn-red{
+    border: 1px solid #FC0300;
+    background-color:  #FC0300;
+    font-size: 20px;
+
+   color: white;
+    border-radius: 3px;
+    padding: 10px 25px 10px 25px;
+    font-weight: bold;
+    transition: .2s all;
+}
+.btn-red:hover{
+    background-color:  #FC0300;
+    font-weight: bold;
+
+}
+.set-input-botrder{
+    border:1px solid #707070;
+}
+.text-red{
+    color: #FC0300;
+}
+.text-disc{
+    color: #7B7B7B;
+}
+.text-total{
+    color:#777777;
+}
+.icon-color{
+    color: #575757;
+
+}
+.size-icon{
+    font-size: 30px!important;
+
+}
+.second-div{
+background-color: #EBECED;
+}
+.zpaid-secondary{
+    padding:3%;
+    font-size: 21px;
+}
+.z-font-costomer{
+    font-size: 27px;
+}
+.z-font-time{
+    font-size: 18px;
+}
+.check{
+    flex-direction:"row";
+}
+.second-div{
+    padding-top: 5%;;
+}
+.z-bill-font{
+    font-size: 16px;
+    padding-bottom: 0%!important;
+    color:#707070;
+}
+.z-total-font{
+    font-size: 24px;
+}
+.z-total-font-rs{
+    font-size: 35px;
+}
+.z-exp-color{
+    color:#888888;
+}
+.z-exp-font-color-date{
+    color:#6d6c6c;
+
+}
+@media screen (min-width:1740px){
+    .font-count{
+    font-size: 2vw;
+    }
+    .font-rs{
+        font-size: 1.3vw;
+    }
+}
+/* takeaway list style  */
+.bg-main-div-color{
+    background-color: #F7F7F7;
+}
+.p-increas{
+    font-size: 32px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+.font-size-head{
+    font-size: 23px;
+}
+.font-booton-set{
+    font-size: 14px;
+}
+.last-font{
+    font-weight: bold;
+    font-size: 26px;
+}
+.font-table-botton{
+    font-size: 12px!important;
+}
+.w-z-table{
+    width: 14%;
+}
+/* payment section  */
+.back-click{
+    font-size: 20px;
+}
+.font-btn-pay
+{
+    font-size: 1vw;
+}
+.payment-mode-text {
+    font-size: 36px;
+    opacity: .8;
+}
+.border-side{
+    border:1px solid #707070;
+}
+/* TAKE AWAY ORDER */
+.set-input-search{
+    border:none!important;
+    background-color: #F8F9FA;
+    border-bottom: 2px solid #888888!important;
+}
+.search input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    outline: 0
+}
+.icon-size-input{
+    font-size: 30px!important;
+    margin-top:-15px;
+    position: absolute;
+    right: 10px;
+}
+
+.back-font{
+    font-size: 20px!important;
+    font-weight: bolder!important;
+    color: #888888;
+}
+.bottom-menu{
+    text-align: center!important;
+    background: #707070;
+}
+@media screen (min-width:766px){
+    .font-set-for-order{
+        font-size:1vw;
+    }
+}
+.menu-background{
+    background-color:#ECECEC;
+    font-size: 1vw;
+}
+.font-set-for-order{
+    font-size:20px;
+    overflow-wrap: break-word;
+}
+@media screen (max-width:1376){
+    .font-set-for-order{
+        font-size:10px;
+    }
+}
+.menu-side-card-text{
+    line-height: .95;
+}
+.check-phone{
+    flex-wrap: nowrap;
+}
+.border-menu{
+    border:1px solid #707070;
+   
+}
